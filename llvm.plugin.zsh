@@ -1,11 +1,8 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
 # Plugin Name: llvm
+# Description: Zsh plugin to set up build flags for LLVM.
 # Repository: https://github.com/johnstonskj/zsh-llvm-plugin
-#
-# Description:
-#
-#   Zsh plugin to set up build flags for LLVM.
 #
 # Public variables:
 #
@@ -13,6 +10,9 @@
 #   * `_ALIASES`; a list of all aliases defined by the plugin.
 #   * `_FUNCTIONS`; a list of all functions defined by the plugin.
 #   * `_PLUGIN_DIR`; the directory the plugin is sourced from.
+#   * `_PREFIX`; the installation prefix of LLVM.
+#   * `_OLD_CPPFLAGS`; the previous value of the `CPPFLAGS` environment variable.
+#   * `_OLD_LDFLAGS`; the previous value of the `LDFLAGS` environment variable.
 # * `CPPFLAGS`; standard compiler flags.
 # * `LDFLAGS`; standard loader flags.
 #
