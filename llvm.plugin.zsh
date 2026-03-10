@@ -1,8 +1,10 @@
 # -*- mode: sh; eval: (sh-set-shell "zsh") -*-
 #
-# @name llvm
-# @brief Zsh plugin to set up build flags for LLVM.
-# @repository https://github.com/johnstonskj/zsh-llvm-plugin
+# @name: llvm
+# @brief: Set build flag environment variables for LLVM.
+# @repository: https://github.com/johnstonskj/zsh-llvm-plugin
+# @version: 0.1.1
+# @license: MIT AND Apache-2.0
 #
 # ### Public Variables
 #
