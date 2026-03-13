@@ -25,10 +25,10 @@ llvm_plugin_init() {
     @zplugins_add_to_path llvm "${llvm_prefix}/bin"
 
     @zplugins_envvar_save llvm CPPFLAGS
-    export CPPFLAGS="${CPPFLAGS} -I${llvm_prefix}/include"
+    typeset -g CPPFLAGS="${CPPFLAGS} -I${llvm_prefix}/include"
 
     @zplugins_envvar_save llvm LDFLAGS
-    export LDFLAGS="${LDFLAGS} -L${llvm_prefix}/lib  -L${llvm_prefix}/lib/c++ -Wl,-rpath,${llvm_prefix}/lib/c++"
+    typeset -g LDFLAGS="${LDFLAGS} -L${llvm_prefix}/lib  -L${llvm_prefix}/lib/c++ -Wl,-rpath,${llvm_prefix}/lib/c++"
 }
 
 # @internal
